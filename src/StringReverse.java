@@ -1,5 +1,7 @@
-import java.io.*;
-import java.util.Scanner;
+import java.lang.*; 
+import java.io.*; 
+import java.util.*; 
+
 class StringReverse{
 
 	public static void main(String a[]) throws Exception
@@ -15,8 +17,18 @@ class StringReverse{
         for(int i = st. length() - 1; i >= 0; i--) {
         reverse = reverse + st.charAt(i);
         } 
-        */ 
-        System.out.println(reverse);
+        */
+
+        StringBuilder input1 = new StringBuilder(); 
+  
+        // append a string into StringBuilder input1 
+        input1.append(st); 
+  
+        // reverse StringBuilder input1 
+        input1 = input1.reverse(); 
+
+
+        System.out.println(input1);
  	 
         }  
    
